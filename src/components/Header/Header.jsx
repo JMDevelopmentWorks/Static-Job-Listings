@@ -4,9 +4,9 @@ import {images} from '../../constants'
 
 const Header = () => {
   return (
-    <div>
-      <img src={images.bg_header_desktop} alt="header"/>
-    </div>
+    <header className='header'>
+   
+    </header>
   )
 }
 
