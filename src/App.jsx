@@ -21,9 +21,9 @@ setJobs(data)
 
 
   return (
-    <main className=" font-spartan relative">
+    <main className=" font-spartan relative ">
     <Header/>
-      <div className='flex flex-col justify-center items-center mt-10'> 
+      <div className='flex flex-col gap-10 mt-16 mx-auto lg:w-3/4 '> 
       {jobs.map((job) => (
         <Card job={job} key={job.id}/>
       ))}

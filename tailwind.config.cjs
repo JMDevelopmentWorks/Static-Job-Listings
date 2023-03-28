@@ -23,8 +23,8 @@ module.exports = {
         card: '0 10px 30px -15px',
       },
       backgroundImage: {
-        bgDesktop: 'url(./src/assets/images/bg-header-desktop.svg)',
-        bgMobile: 'url(./src/assets/images/bg-header-mobile.svg)',
+        bgDesktop: "url('/assets/images/bg-header-desktop.svg')",
+        bgMobile: "url('/assets/images/bg-header-mobile.svg')",
       },
     },
   },

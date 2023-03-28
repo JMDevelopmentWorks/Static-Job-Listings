@@ -1,4 +1,4 @@
-import account from '../assets/images/account.svg'
+/* import account from '../assets/images/account.svg'
 import bg_header_desktop from '../assets/images/bg-header-desktop.svg'
 import bg_header_mobile from '../assets/images/bg-header-mobile.svg'
 import eyecam from '../assets/images/eyecam-co.svg'
@@ -27,4 +27,4 @@ export default {
     photosnap,
     shortly,
     the_air_filter_company,
-}
+} */

@@ -18,6 +18,9 @@
   --darkgray-cyan: hsl(180, 8%, 52%);
   --verydark-cyan: hsl(180, 14%, 20%);
 }
+
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,7 +36,7 @@ ul {
 
 html, body {
   height: 100%;
-
+  
   font-size: 16px;
   
 }
@@ -53,6 +56,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
-} */
+} 
 
+*/
 
