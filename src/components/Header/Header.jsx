@@ -4,8 +4,7 @@ import {images} from '../../constants'
 
 const Header = () => {
   return (
-    <header className='header'>
-   
+    <header className='bg-bgDesktop w-screen bg-cover bg-desaturatedCyan'>
     </header>
   )
 }

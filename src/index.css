@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/*
+
+ @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
 
 :root {
 
@@ -9,7 +18,6 @@
   --darkgray-cyan: hsl(180, 8%, 52%);
   --verydark-cyan: hsl(180, 14%, 20%);
 }
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -45,6 +53,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
-}
+} */
 
 
