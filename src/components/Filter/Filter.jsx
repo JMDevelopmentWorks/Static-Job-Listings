@@ -1,20 +1,29 @@
 import React from "react";
 import "./Filter.scss";
 
-const Filter = ({ filters, setFilters, handleFilterClick }) => {
+const Filter = ({ filters, clearFilters, handleFilterClick }) => {
   return (
     <div>
       {filters.length > 0 && (
-        <div className="flex flex-wrap items-center gap-4 lg:flex-row  relative bg-white m-4 p-10 rounded shadow-card">
+        
+        <div className="flex -mt-24  items-center justify-between  relative bg-white m-4 p-6 lg:py-6 lg:px-12 rounded shadow-card">
+          <div className="flex flex-wrap items-center gap-4">
           {filters.map((filter, index) => (
-            <span onClick={() => handleFilterClick(filter)} className="bg-backgroundCyan text-desaturatedCyan font-bold tracking-tight text-appBase px-2 py-1 rounded-md flex items-center gap-2 " key={index}>{filter} 
-            <span className="bg-desaturatedCyan text-white">
-              X
-            </span>
-            </span>
+            <div className="bg-backgroundCyan text-desaturatedCyan font-bold tracking-tight text-appBase pl-2 my-1 rounded-md flex  gap-2 relative ">
+              <span className="py-1" >
+                {filter}
+              </span>
+              <span onClick={() => handleFilterClick(filter)} key={index} className="bg-desaturatedCyan hover:bg-veryDarkCyan hover:cursor-pointer text-white w-7 rounded-r text-center py-1">
+              ✕
+              </span>
+            </div>
           ))}
+          </div>
+          <span onClick={() => clearFilters()} className="text-appBase font-bold text-gray-400 hover:underline hover:text-desaturatedCyan hover:cursor-pointer">Clear</span>
         </div>
+
       )}
+      
     </div>
   );
 };

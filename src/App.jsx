@@ -42,13 +42,24 @@ function App() {
     setFilters(filters.filter((f) => f !== filterClicked));
   };
 
+  const clearFilters = () => {
+    //Fully clear of the filters
+
+    setFilters([]);
+  };
+
   const filteredJobs = jobs.filter(filterFunction);
 
   return (
     <main className=" font-spartan relative bg-backgroundCyan min-h-screen">
       <Header />
-      <div className="mx-auto lg:w-3/4 mb-14 lg:mb-0">
-        <Filter filters={filters} handleFilterClick={handleFilterClick} />
+      
+      <div className="mx-auto lg:w-3/4  mb-14 lg:mb-0">
+        <Filter
+          filters={filters}
+          clearFilters={clearFilters}
+          handleFilterClick={handleFilterClick}
+        />
       </div>
       <div className="flex flex-col gap-8 lg:gap-0  mx-auto lg:w-3/4 pb-10 ">
         {filteredJobs.map((job) => (
