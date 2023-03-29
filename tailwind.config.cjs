@@ -20,7 +20,7 @@ module.exports = {
         appBase: "15px",
       },
       boxShadow: {
-        card: '0 10px 30px -15px',
+        card: '0 10px 30px -15px #5BA4A4',
       },
       backgroundImage: {
         bgDesktop: "url('/assets/images/bg-header-desktop.svg')",
