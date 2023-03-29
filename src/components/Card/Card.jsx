@@ -1,5 +1,4 @@
 import React from "react";
-import "./Card.scss";
 
 const Card = ({ job, handleTagClick }) => {
   return (
@@ -45,7 +44,7 @@ const Card = ({ job, handleTagClick }) => {
           </div>
         </div>
       </div>
-      
+
       <div className="flex flex-wrap justify-start lg:justify-end lg:ml-auto gap-4 items-center -ml-5 font-bold text-appBase text-desaturatedCyan border-t border-gray-500 border-solid lg:border-hidden mt-6 pt-6 lg:mt-0 lg:pt-0">
         {job.tags.map((tag, index) => (
           <button

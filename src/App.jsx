@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { data } from "./Data/Data";
-import { Header, Filter, Card, Modal } from "./components";
+import { Header, Filter, Card } from "./components";
 import "./App.css";
 
 {
